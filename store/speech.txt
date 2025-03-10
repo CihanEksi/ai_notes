@@ -1,0 +1,12 @@
+FAISS (Facebook AI Similarity Search), büyük ölçekli vektör arama yapabilen bir kütüphanedir. Yüksek boyutlu vektörleri hızlı bir şekilde aramak ve benzerlik ölçümü yapmak için optimize edilmiştir.
+Örneğin, bir metin kümesini vektörlere dönüştürerek, en benzer metinleri bulmak için FAISS kullanılabilir. İlk adım olarak, metinleri belirli bir gömme (embedding) modeli ile vektörlere dönüştürmek gerekir. Daha sonra, bu vektörler FAISS indeksine eklenir ve benzerlik araması yapılır.
+FAISS'in temel özellikleri şunlardır:
+Yüksek verimli vektör arama
+GPU ve CPU optimizasyonları
+Çeşitli indeksleme yöntemleri
+Örnek bir kullanım senaryosu şu şekildedir:
+Metinleri vektörlere dönüştür
+FAISS ile bir indeks oluştur ve vektörleri ekle
+Bir sorgu vektörü ile en yakın komşuları bul
+FAISS, büyük veri kümelerinde benzer öğeleri hızlıca bulmak için güçlü bir araçtır.
+Ama FAISS doğrudan cevap oluşturmaz, sadece en benzer metin parçalarını getirir.
