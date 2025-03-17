@@ -2,3 +2,5 @@ conda create -p venv python==3.10 -y
 conda activate venv/
 pip install -r .\requirements.txt
 streamlit run app.py
+
+conda create -n RAGDocumentQAWithChatHistory python=3.10 -y

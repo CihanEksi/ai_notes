@@ -1,0 +1,8 @@
+streamlit
+langchain
+pypdf
+dotenv
+langchain_groq
+chromadb
+langchain_groq
+streamlit
