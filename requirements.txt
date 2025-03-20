@@ -9,3 +9,8 @@ langchain-text-splitters
 langchain-chroma
 sentence_transformers
 langchain_huggingface
+arxiv
+pymupdf
+langchain_ollama
+streamlit
+duckduckgo-search

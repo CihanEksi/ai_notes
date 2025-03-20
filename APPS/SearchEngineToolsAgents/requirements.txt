@@ -1,0 +1,11 @@
+arxiv
+pymupdf
+wikipedia
+langchain_text_splitters
+langchain_community
+langchain_huggingface
+langchain_groq
+streamlit
+python-dotenv
+langchain
+duckduckgo-search

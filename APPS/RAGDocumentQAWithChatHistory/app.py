@@ -15,7 +15,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")  # type: ignore
+os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN", "")  
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 model_name = "Llama3-8b-8192"
 
@@ -36,7 +36,7 @@ def get_session_history(session: str) -> BaseChatMessageHistory:
 
 
 if api_key:
-    llm = ChatGroq(api_key=api_key, model="Llama3-8b-8192")  # type: ignore
+    llm = ChatGroq(model="Llama3-8b-8192",api_key=api_key)   # type: ignore
 
     sessionId = st.text_input("Enter your session ID", value="default_session")
 

@@ -17,12 +17,12 @@ import time
 load_dotenv()
 
 ## load the groq api
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
 grok_api_key = os.getenv("GROQ_API_KEY")
 model_name = "Llama3-8b-8192"
 loaderDir = "research_papers"
 
-llm = ChatGroq(model_name=model_name)
+llm = ChatGroq(model=model_name)
 prompt = ChatPromptTemplate.from_template(
     """
     Answer the following questions about the document:
