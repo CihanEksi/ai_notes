@@ -35,7 +35,7 @@ prompt = ChatPromptTemplate.from_template(
 
 def create_vector_embedding():
     if 'vectors' not in st.session_state:
-        st.session_state.embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
+        st.session_state.embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY")) # type: ignore
         st.session_state.loader = PyPDFDirectoryLoader(loaderDir)
         st.session_state.docs = st.session_state.loader.load()
         
