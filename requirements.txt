@@ -20,3 +20,5 @@ youtube-transcript-api
 unstructured
 pytube
 numexpr
+langchain_huggingface
+huggingface_hub
