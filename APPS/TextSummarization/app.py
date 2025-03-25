@@ -21,7 +21,7 @@ st.subheader("Summarize any text or video content with url!")
 
 
 with st.sidebar:
-    groq_api_key = st.text_input("Groq API Key",type="password",value='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')
+    groq_api_key = st.text_input("Groq API Key",type="password",value='')
 
 url = st.text_input("Enter URL",label_visibility="collapsed")
 
